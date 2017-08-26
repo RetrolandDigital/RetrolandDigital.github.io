@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>RetroLand Digital</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/header.css">
+        <link rel="stylesheet" type="text/css" href="assets/estaciones.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <section id="header"><div id="headercontent">
+            <div>
+                <a href="#aboutus">Sobre Nosotros</a>
+                <a href="#estaciones">Estaciones</a>
+                <a href="#donativos">Donativos</a>
+                <a href="#contact">Contacto</a>
+                <a href="en.html">English</a>
+            </div>
+            <a href="index.html" style="float:right; text-decoration:none"><h2 style="color:white; margin-top:-55px">RetroLand Digital</h2></a>
+        </div></section> <!-- End Header -->
+        
+        <div id="container">
+            <br><br><br><br><br> <!-- Compensar el fixed header -->
+           
+            <!-- About us -->
+            <section id="aboutus" class="w3-card">
+                <h1>RETROLAND DIGITAL</h1>
+                <marquee id="marclogos">
+                    <img src="images/iconos/70Disco.jpg">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/CafeRom.jpg">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/Cumbias.png">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/Instrumental.jpg">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/Oldies.jpg">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/VivaMex.jpg">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/80es.png">
+                    &nbsp; &nbsp;
+                    <img src="images/iconos/80en.png">
+                    &nbsp; &nbsp;
+                </marquee>
+                <h4>Música retro para todas las edades</h4>
+                <p></p>
+            </section> <!-- End About us -->
+
+            <!-- Estaciones -->
+            <section id="estaciones" class="w3-card">
+                <center><h2>NUESTRAS ESTACIONES</h2></center>
+                <div class="w3-bar w3-bar-block w3-light-grey w3-card-2" style="width:25%; position:static; float:left">
+                    <h5 class="w3-bar-item"><strong>Seleccionar Estacion:</strong></h5>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, '70Disco')">70s Disco Nights</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'CafeRom')">Café Romántico Radio</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Cumbias')">Cumbias Inmortales Radio</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Instrumental')">Instrumental Hits Radio</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Oldies')">Oldies Internet Radio</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'VivaMex')">Que Viva México</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, '80es')">Estrellas de los 80s radio</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, '80en')">80s Online Radio</button>
+                </div>
+
+                <div id="pestanas">
+                    <div style="width:75%; float:right">
+                        <div id="70Disco" class="w3-container radio" style="margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://70sdisconights.com/es/" target="_blank"><img alt="70s Disco Nights" src="images/iconos/70Disco.jpg"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: 70s Disco Nights <br>
+                                                    Género: Música disco <br>
+                                                    Idioma: Inglés <br>
+                                                    Antiguedad: 200? <br>
+                                                    Sitio web: <a href="http://70sdisconights.com/es/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp;
+                                                <a target="_blank" href="https://twitter.com/70sdisconights"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=1807083516&r=3882&amp;type=aacp&amp;autoplay=0&amp;currentsong=1&amp;lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/68282/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> 70s Disco Nights:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/70s-disco-nights/id1236955783?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="http://play.google.com/store/apps/details?id=com.nobexinc.wls_4816842609.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="CafeRom" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://caferomanticoradio.com" target="_blank"><img alt="Café Romántico Radio" src="images/iconos/CafeRom.jpg"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Café Romántico Radio <br>
+                                                    Género: Música romántica de <br> todas las épocas <br>
+                                                    Idioma: Español <br>
+                                                    Antiguedad: 2012 <br>
+                                                    Sitio web: <a href="http://caferomanticoradio.com" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a target="_blank" href="https://www.facebook.com/caferomanticoradio/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp;
+                                                <a target="_blank" href="https://twitter.com/caferomantico?lang=es"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=380246983&r=3881&type=aacp&autoplay=0&currentsong=1&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/51335/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> Café Romántico Radio:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/cafe-romantico-radio/id1226579360?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_4277200955.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="Cumbias" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://cumbiasinmortales.com" target="_blank"><img alt="Cumbias Inmortales" src="images/iconos/Cumbias.png"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Cumbias Inmortales <br>
+                                                    Género: Música grupera <br>
+                                                    Idioma: Español <br>
+                                                    Antiguedad: 201? <br>
+                                                    Sitio web: <a href="http://cumbiasinmortales.com" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a href="http://cumbiasinmortales.com"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp; -->
+                                                <a href="https://twitter.com/CumbiasInmortal?lang=es"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=1051076761&r=5330&type=aacp&autoplay=0&currentsong=0&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/42518/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> Cumbias Inmortales:</h4>
+                                            <br><br>
+                                            <a target="_blank" target="_blank" href="https://itunes.apple.com/us/app/cumbias-inmortales/id1237475200?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_7009698714.rc&hl=es"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="Instrumental" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://instrumentalhitsradio.com/" target="_blank"><img alt="Instrumental Hits Radio" src="images/iconos/Instrumental.jpg"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Instrumental Hits Radio <br>
+                                                    Género: Música instrumental de distintos géneros <br>
+                                                    Idioma: Inglés/Español <br>
+                                                    Antiguedad: 200? <br>
+                                                    Sitio web: <a href="http://instrumentalhitsradio.com/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp; -->
+                                                <a target="_blank" href="https://twitter.com/InstrumentalHit"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=630421505&r=7233&type=aacp&autoplay=0&currentsong=1&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/68287/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> Instrumental Hits Radio:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/instrumental-hits-radio/id1224803302?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_5761041264.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="Oldies" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://oldiesinternetradio.com/" target="_blank"><img alt="Oldies Internet Radio" src="images/iconos/Oldies.jpg"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Oldies Internet Radio <br>
+                                                    Género: Hits de entre los años 60s y 80s <br>
+                                                    Idioma: Inglés <br>
+                                                    Antiguedad: 200? <br>
+                                                    Sitio web: <a href="http://oldiesinternetradio.com/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp; -->
+                                                <a target="_blank" href="https://twitter.com/OldiesInternet"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=507623843&r=7234&type=aacp&autoplay=0&currentsong=1&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/43672/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> Oldies Internet Radio:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/oldies-internet-radio/id1080298965?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_52120000.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="VivaMex" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://quevivamexico.com/" target="_blank"><img alt="Que Viva México Radio" src="images/iconos/VivaMex.jpg"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Que Viva México Radio <br>
+                                                    Género: Música típica mexicana <br>
+                                                    Idioma: Español <br>
+                                                    Antiguedad: 200? <br>
+                                                    Sitio web: <a href="http://quevivamexico.com/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp; -->
+                                                <a target="_blank" href="https://twitter.com/QueVivaMexico1"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=640820724&r=5271&type=aacp&autoplay=0&currentsong=1&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/68214/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> 70s Disco Nights:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/que-viva-mexico/id947842881?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_5156435763.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="80es" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://estrellasdelos80s.com/" target="_blank"><img alt="Estrellas de los 80s" src="images/iconos/80es.png"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: Estrellas de los 80s <br>
+                                                    Género: Música en español de la decada de los 80s <br>
+                                                    Idioma: Español <br>
+                                                    Antiguedad: 2017 <br>
+                                                    Sitio web: <a href="http://estrellasdelos80s.com/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp;
+                                                <a target="_blank" href="https://twitter.com/70sdisconights"><i class="fa fa-twitter-square fa-3x"></i></a> -->
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=80432433&r=13807&type=aacp&autoplay=0&currentsong=1&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/70118/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> Estrellas de los 80s:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/estrellas-de-los-80s/id1258068764?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_2583377001.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="80en" class="w3-container radio" style="display:none; margin-right:-15px">
+                            <table class="w3-card w3-light-grey" cellspacing="20">
+                                <tr>
+                                    <td colspan="2">
+                                        <table class="w3-card w3-white">
+                                            <td>
+                                                <a href="http://80sonlineradio.com/" target="_blank"><img alt="70s Disco Nights" src="images/iconos/80en.png"></a>
+                                            </td>
+                                            <td>
+                                                <p class="description">
+                                                    Nombre: 80s Online Radio <br>
+                                                    Género: Música en inglés de la decada de los 80s <br>
+                                                    Idioma: Inglés <br>
+                                                    Antiguedad: 2017 <br>
+                                                    Sitio web: <a href="http://80sonlineradio.com/" target="_blank">Visitar el sitio <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <!-- <a target="_blank" href="https://www.facebook.com/70sdisconights/"><i class="fa fa-facebook-square fa-3x"></i></a>
+                                                &nbsp; &nbsp;
+                                                <a target="_blank" href="https://twitter.com/70sdisconights"><i class="fa fa-twitter-square fa-3x"></i></a> -->
+                                            </td>
+                                        </table>                              
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="reproductor w3-card w3-white" style="padding:5px">
+                                            <div>
+                                                <h4>Reproductor</h4>
+                                            </div>
+                                            <div>
+                                                <iframe style="padding: 0px;" frameborder="0" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=1298870566&r=13609&type=aacp&autoplay=0&currentsong=0&lang=es" width="300" height="52" allowtransparency="true" scrolling="No"></iframe>
+                                            </div>
+                                            <div>
+                                                <h5>Recientemente Reproducido</h5>
+                                            </div>
+                                            <div>
+                                                <iframe id="nobexWidget_playlist"  scrolling="no" height="230" src="http://www.nobexpartners.com/Widgets.aspx#/playlist/70098/carousel/ltr/fff" marginheight= "0" marginwidth= "0" > </iframe>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="w3-card w3-white apps"><center>
+                                            <h4>Descarga las apps de <br> 80s Online Radio:</h4>
+                                            <br><br>
+                                            <a target="_blank" href="https://itunes.apple.com/us/app/80s-online-radio/id1254164720?mt=8"><img style="width:90%" src="images/apps/appstestre80s.png" alt="Appstore"></a>
+                                            <br><br><br>
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_3582186147.rc"><img style="width:90%" src="images/apps/goostestre80s.png" alt="Google Play"></a>
+                                            <br><br><br>
+                                        </center></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </section> <!-- End Estaciones -->
+
+            <!-- Donativos -->
+            <section id="donativos" class="w3-card">
+                <h2>Apoya a Retroland Digital:</h2>
+                <p>
+                    Nuestras emisoras de radio son un servicio gratuitio, pero aceptanmos donaciones voluntarias de nuestros radioescuchas.
+                </p>
+                <br>
+                <p>Si deseas apoyarnos, puedes realizar tu donativo a través de Oxxo, Citibanamex o 7 Eleven. O bien, a través de PayPal.</p>
+                <br>
+                <a target="_blank" href="http://www.saldazooxxo.com/"><img src="images/donativos/Oxxo.png" width="60" border="0" alt="Oxxo"></a> &nbsp;&nbsp;
+                <a target="_blank" href="https://www.transferbanamex.com/sc-banamex-mps/signin"><img src="images/donativos/Citibanamex.jpg" width="100" border="0" alt="Banamex" ></a> &nbsp;&nbsp;
+                <a target="_blank" href="http://www.7-eleven.com.mx/index.php/nuestra-empresa/servicios-electronicos"><img src="images/donativos/seven.png" width="80" border="0" alt="Seven Eleven"></a> &nbsp;&nbsp;
+                <br>
+                <p>Tarjeta No. 4766 8701 4894 9599 <br> CLABE: 002073560091233306</p> <br>
+                <img src="images/donativos/pp.jpg" alt="PayPal Logo" width="120" height="33"> <br><br>
+                <a target="_blank" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_donations&business=hecgua@hotmail.com&lc=US&no_note=0&currency_code=USD&bn=PP-DonationsBF%3Abtn_donateCC_LG.gif%3ANonHostedGuest&submit.x=76&submit.y=8#"><img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" alt="DONAR"></a>
+                <br><br>
+            </section>
+            <!-- End Donativos -->
+
+            <!-- Contacto -->
+            <section id="contact" class="w3-card">
+                <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfq4vLr6tayyqWbx5bCD_WYgJ09ZCMzb1P97qeHr3ExksVGrA/viewform?embedded=true" style="width:100%; height:1080px" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe></center>
+            </section>
+            <!-- End Contacto -->
+
+            <!-- Footer -->
+            <section id="footer">
+                <p>
+                    2017 Retroland Radio <br>
+                    por Mauricio Guadiana - con elementos del framework w3.css
+                </p>
+            </section>
+            <!-- End Footer --> 
+            
+            <div><br></div>
+            
+        </div>
+        
+        <!-- Scripts -->
+        
+        <!-- Script movil -->
+        <script type="text/javascript">
+            if( /Android/i.test(navigator.userAgent) ) {
+                window.location="movil.a.es.html";
+            }
+            else if(/iPhone|iPod|iPad/i.test(navigator.userAgent)) {
+                window.location="movil.i.es.html";
+            }
+        </script>
+        
+        <!-- Tabs script -->
+        <script>
+        function openTab(evt, radioName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("radio");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); 
+          }
+          document.getElementById(radioName).style.display = "block";
+          evt.currentTarget.className += " w3-dark-grey";
+        }
+        </script>
+        
+    </body>
+</html>

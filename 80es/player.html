@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Estrellas de los 80</title>
+	<link href="images/MiniESP.png" rel="shortcut icon" />
+	<link href="assets/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:white">
+<div style="vertical-align:middle; width:330px">
+<center><img alt="Estrellas de los 80s" src="images/BannerESP.png" style="width:250px; margin-bottom:5px" /></center>
+
+<div style="background-color: #28a6df; padding:1px; border-radius: 20px 20px 0 0">
+<center>
+<h4 style="color:white">Reproductor</h4>
+</center>
+</div>
+
+<div style="border: solid 2px #28a6df; margin-top: 0px">
+<div class="mySlides">
+<center><iframe allowtransparency="true" frameborder="0" height="50" scrolling="No" src="https://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=488118672&amp;r=13807&amp;type=aacp&amp;autoplay=0&amp;currentsong=1&amp;lang=es" style="padding:0px; margin-bottom:-4px" width="250"></iframe></center>
+</div>
+
+<div class="mySlides">
+<center><iframe frameborder="no" scrolling="no" src="https://tunein.com/embed/player/s293780/" style="width:90%; height:60px; margin-bottom:-5px"></iframe></center>
+</div>
+</div>
+
+<div style="border: solid 2px #28a6df; margin-top:-2px; background-color:#28a6df; padding:15px; border-radius: 0px 0px 20px 20px">
+<center><button class="menuoption" onclick="plusDivs(+1)" style="font-size:14px; margin-top:0px;"><u>Reproductor alternativo</u></button><br />
+<a class="menuoption" href="#donaciones" style="font-size:14px; margin-top:0px; padding:3px">Donaciones</a></center>
+</div>
+
+<center>&nbsp;
+<h4 id="donaciones">Donaciones</h4>
+
+<p><span style="font-size:14px;">Para mantener nuestro servicio, se aceptan donaciones voluntarias. Se pueden realizar en los siguientes establecimientos:</span></p>
+<a href="http://www.saldazooxxo.com/" target="_blank"><img alt="Oxxo" border="0" src="images/donativos/Oxxo.png" width="60" /></a> &nbsp; <a href="https://www.transferbanamex.com/sc-banamex-mps/signin" target="_blank"><img alt="Banamex" border="0" src="images/donativos/Citibanamex.jpg" width="100" /></a> &nbsp; <a href="http://www.7-eleven.com.mx/index.php/nuestra-empresa/servicios-electronicos" target="_blank"><img alt="Seven Eleven" border="0" src="images/donativos/seven.png" width="80" /></a>
+
+<p><span style="font-size:14px;">Tarjeta No. 4766 8701 4894 9599<br />
+CLABE: 002073560091233306</span></p>
+
+<p><span style="font-size:14px;">De igual forma se puede donar por PayPal:</span></p>
+<a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_donations&amp;business=hecgua@hotmail.com&amp;lc=US&amp;no_note=0&amp;currency_code=USD&amp;bn=PP-DonationsBF%3Abtn_donateCC_LG.gif%3ANonHostedGuest&amp;submit.x=76&amp;submit.y=8#" target="_blank"><img alt="DONAR" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_cc_147x47.png" /></a></center>
+</div>
+<!-- Scripts --><!-- Slideshow --><script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                x[slideIndex-1].style.display = "block"; 
+            }
+        </script></body>
+</html>

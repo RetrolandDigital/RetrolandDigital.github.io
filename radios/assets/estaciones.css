@@ -1,0 +1,58 @@
+/* Panel */
+
+#estaciones {
+    width: 90%;
+    margin: auto;
+    height: 825px;
+}
+
+#estaciones img {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#estaciones table tr td:first-child {
+    text-align: left;
+}
+
+#pestanas table {
+    width: 100%;
+    margin: auto;
+}
+
+.description {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.apps {
+    height: 400px;
+}
+
+/* End Panel */
+
+/* Reproductor */
+
+.reproductor div:first-child {
+    color: black;
+    padding: 0.5px;
+    text-align: center;
+}
+
+.reproductor div:nth-child(2) {
+    margin: 0px;
+    text-align: center;
+}
+
+.reproductor div:nth-child(3) {
+    color: black;
+    padding: 0.1px;
+    text-align: center;
+}
+
+.reproductor div:last-child {
+    margin: 0px;
+}
+
+/* End Reproductor */

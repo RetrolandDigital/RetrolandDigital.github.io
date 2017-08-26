@@ -1,0 +1,106 @@
+/* Globals */
+
+* {
+    font-family: arial;
+}
+
+body {
+    background-color: lightgray;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+#container {
+    max-width: 1100px;
+    min-width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'retro';
+    src: url('/fonts/retro.ttf');
+}
+
+h1 {
+    font-family: 'retro';
+    color: #2f2f2f;
+}
+
+section h1, section h2 {
+    font-family: 'retro';
+    color: #2f2f2f;
+    padding-top: 70px; 
+    margin-top: -40px;
+}
+
+.w3-card {
+    padding: 15px;
+}
+
+#movilapps tr td {
+    width: 50%;
+}
+
+#movilapps tr td img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+#movilapps td {
+    padding: 5%;
+}
+
+/* Sections */
+
+section {
+    margin-bottom: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+#container section {
+    margin-bottom: 70px;
+}
+
+/* Marquesina */
+
+#marclogos {
+    width: 500px;
+    margin: auto;
+}
+
+#marclogos img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+/* About us */
+
+#aboutus {
+    text-align: center;
+}
+
+/* Donativos */
+
+#donativos {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#donativos p {
+    width: 400px;
+    margin: auto;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    color: darkgray;
+}

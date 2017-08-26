@@ -1,0 +1,110 @@
+/*
+    Paleta de colores:
+    Rojo:       #f33d39
+    Azul:       #28a6df
+    Verde:      #8bc346
+    Amarillo:   #f8ae41
+    Morado:     #dc2de2
+*/
+
+/* Generals/Globals */
+
+body {
+    /*background-color: aquamarine;*/
+    background-color: lightgray;
+    padding: 20px 20px 20px 20px;
+    overflow-x: auto;
+}
+
+#container {
+    max-width: 1000px;
+    min-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 20px 1px 20px;
+}
+
+* {
+    font-family: arial;
+}
+
+td h2 {
+    font-family: 'Neon80';
+}
+
+td h3, div h3 {
+    font-family: 'Neon80';
+}
+
+p {
+    width: 90%;
+    color: #535353;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Neon80';
+    src: url('/fonts/Neon.ttf');
+}
+
+/* Sections */
+
+#menubar {
+    max-width: 1000px;
+    min-width: 800px;
+    height: 50px;
+    background-color: #28a6df;
+    margin: 70px -20px 50px -20px;
+    text-align: center;
+}
+
+#grid {
+    margin: -20px -20px 30px -20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* Specifics */
+
+.splitoptions {
+    /*border-left: solid 2px white;*/
+    padding-right: 4px;
+    border-right: solid 2px white;
+    height: 50px;
+    display: inline-block;
+}
+
+.menuoption {
+    color: white;
+    font-size: 20px;
+    border: transparent;
+    background-color: #28a6df;
+    margin-top: 9px;
+}
+
+.menuoption:hover {
+    background-color: white;
+    color: #28a6df;
+}
+
+.horizontal {
+    width: 95%;
+    border: solid 0.5px lightgray;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} /* Se usa como hr, pero se dejo de aplicar a este website */
+
+.contentbox {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    border-color: lightgray;
+}
+
+table td {
+    padding: 20px;
+}
